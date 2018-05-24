@@ -283,6 +283,13 @@ ctrl+n    相对/绝对行号切换
 
 ### UPDATE_LOG
 
+modify by wisfern
+1. 新建tab由<C-t>改为<C-n>， 原有的<C-t>保持为跳回功能
+2. 新增gtags，并用Plug 'ludovicchabant/vim-gutentags' | Plug 'skywind3000/gutentags_plus'实现自动加载ctags和gtags
+3. 注释" let g:ctrlp_map = '<leader>p'，使用ctrlP默认的快捷键
+4. 安装ag，并启用ag的vim插件配置
+5. NerdTree目录浏览器开启快捷键修改为F8，而F9为tagbar，配置着蛮好的
+
 version 9.2
 
 ```
@@ -319,24 +326,8 @@ thx a lot. 可以给我提pull request:)
 
 [链接](http://www.wklken.me/posts/2014/10/03/vim-resources.html)
 
-### Donation
-
-如果你认为对你有所帮助, You can Buy me a coffee:)
-
-
-![donation](https://raw.githubusercontent.com/wklken/gallery/master/donation/donation_w.jpg)
-
 ------------------------
 ------------------------
 
 The End!
-
-wklken (凌岳/pythoner/vim党预备党员)
-
-Github: https://github.com/wklken
-
-Blog: [http://www.wklken.me](http://www.wklken.me)
-
-2013-06-11 于深圳
-
 

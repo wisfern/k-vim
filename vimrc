@@ -241,7 +241,7 @@ function! NumberToggle()
     set relativenumber
   endif
 endfunc
-nnoremap <C-n> :call NumberToggle()<cr>
+" nnoremap <C-n> :call NumberToggle()<cr>
 
 " 防止tmux下vim的背景色显示异常
 " Refer: http://sunaku.github.io/vim-256color-bce.html
@@ -277,6 +277,8 @@ set formatoptions+=B
 "==========================================
 " others 其它设置
 "==========================================
+" 快速打开快捷键列表，助记作用
+" map <leader>h :e! ~/.vim_shortcut
 " vimrc文件修改之后自动加载, windows
 autocmd! bufwritepost _vimrc source %
 " vimrc文件修改之后自动加载, linux
@@ -498,8 +500,8 @@ nnoremap <silent> <leader>tt :execute 'tabnext ' . g:last_active_tab<cr>
 autocmd TabLeave * let g:last_active_tab = tabpagenr()
 
 " 新建tab  Ctrl+t
-nnoremap <C-t>     :tabnew<CR>
-inoremap <C-t>     <Esc>:tabnew<CR>
+nnoremap <C-n>     :tabnew<CR>
+inoremap <C-n>     <Esc>:tabnew<CR>
 
 
 " => 选中及操作改键
@@ -526,7 +528,7 @@ map <Leader>sa ggVG
 nnoremap gv `[v`]
 
 " select block
-nnoremap <leader>v V`}
+" nnoremap <leader>v V`}
 
 " w!! to sudo & write a file
 cmap w!! w !sudo tee >/dev/null %
@@ -657,8 +659,8 @@ endif
 set background=dark
 set t_Co=256
 
-colorscheme solarized
-" colorscheme molokai
+" colorscheme solarized
+colorscheme molokai
 
 
 " 设置标记一列的背景颜色和数字一行颜色一致
